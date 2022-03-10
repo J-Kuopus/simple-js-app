@@ -33,3 +33,10 @@ for (; pokemonList[i]; ) {
   i++;
 }
 document.write(text);
+
+//This is supposed to mark a Pokemon with height: 1, or larger
+for (let i = 0; i < pokemonList.length; i++) {
+  if (pokemonList[i].height >= 1) {
+    document.write(" - Wow, that's big!");
+  }
+}
