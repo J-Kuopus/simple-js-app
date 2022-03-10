@@ -16,3 +16,20 @@ let pokemonList = [
     types: ['field', 'fairy'],
   },
 ];
+
+//This lists the Pokemon in order by name, followed by height
+let text = '';
+let i = 0;
+for (; pokemonList[i]; ) {
+  text =
+    text +
+    ' ' +
+    pokemonList[i].name +
+    ' ' +
+    '(height: ' +
+    pokemonList[i].height +
+    ')' +
+    '<br>';
+  i++;
+}
+document.write(text);
