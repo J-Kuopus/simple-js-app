@@ -9,3 +9,9 @@ body {
   width: 10%;
   display: flex;
 }
+
+header {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
