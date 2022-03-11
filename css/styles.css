@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Fredoka', sans-serif;
   background-color: #f9ffa6;
