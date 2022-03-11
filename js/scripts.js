@@ -17,7 +17,7 @@ let pokemonList = [
   },
 ];
 
-//This lists the Pokemon and marks them if they are size 1 or larger
+//This lists the Pokemon in the DOM and marks them if they are size 1 or larger
 for (let i = 0; i < pokemonList.length; i++) {
   if (pokemonList[i].height >= 1) {
     document.write(
