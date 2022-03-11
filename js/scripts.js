@@ -17,26 +17,20 @@ let pokemonList = [
   },
 ];
 
-//This lists the Pokemon in order by name, followed by height
-let text = '';
-let i = 0;
-for (; pokemonList[i]; ) {
-  text =
-    text +
-    ' ' +
-    pokemonList[i].name +
-    ' ' +
-    '(height: ' +
-    pokemonList[i].height +
-    ')' +
-    '<br>';
-  i++;
-}
-document.write(text);
-
-//This is supposed to mark a Pokemon with height: 1, or larger
+//This lists the Pokemon and marks them if they are size 1 or larger
 for (let i = 0; i < pokemonList.length; i++) {
   if (pokemonList[i].height >= 1) {
-    document.write(" - Wow, that's big!");
+    document.write(
+      pokemonList[i].name +
+        ' (height: ' +
+        pokemonList[i].height +
+        ')' +
+        " - Wow, that's big!" +
+        '<br>'
+    );
+  } else {
+    document.write(
+      pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')' + '<br>'
+    );
   }
 }
