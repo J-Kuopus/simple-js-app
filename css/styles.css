@@ -18,7 +18,8 @@ body {
 }
 
 #pokedex-logo {
-  width: 10%;
+  width: 100px;
+  height: 80px;
 }
 
 header {
