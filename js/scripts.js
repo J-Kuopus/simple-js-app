@@ -17,6 +17,24 @@ let pokemonList = [
   },
 ];
 
+let pokemonList2 = [
+  {
+    name: 'Clefable',
+    height: 1.3,
+    types: ['fairy'],
+  },
+  {
+    name: 'Pidgey',
+    height: 0.3,
+    types: ['flying'],
+  },
+  {
+    name: 'Squirtle',
+    height: 0.5,
+    types: ['monster', 'water1'],
+  },
+];
+
 //This lists the Pokemon in the DOM and marks them if they are size 1 or larger
 for (let i = 0; i < pokemonList.length; i++) {
   if (pokemonList[i].height >= 1) {
