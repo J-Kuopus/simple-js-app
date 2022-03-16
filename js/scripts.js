@@ -16,6 +16,21 @@ let pokemonRepository = (function () {
       height: 0.4,
       types: ['field', 'fairy'],
     },
+    {
+      name: 'Clefable',
+      height: 1.3,
+      types: ['fairy'],
+    },
+    {
+      name: 'Pidgey',
+      height: 0.3,
+      types: ['flying'],
+    },
+    {
+      name: 'Squirtle',
+      height: 0.5,
+      types: ['monster', 'water1'],
+    },
   ];
 
   function getAll() {
@@ -31,24 +46,6 @@ let pokemonRepository = (function () {
     add: add,
   };
 })();
-
-let pokemonList2 = [
-  {
-    name: 'Clefable',
-    height: 1.3,
-    types: ['fairy'],
-  },
-  {
-    name: 'Pidgey',
-    height: 0.3,
-    types: ['flying'],
-  },
-  {
-    name: 'Squirtle',
-    height: 0.5,
-    types: ['monster', 'water1'],
-  },
-];
 
 //This lists the Pokemon in the DOM and marks them if they are size 1 or larger
 document.write('<ul>');
