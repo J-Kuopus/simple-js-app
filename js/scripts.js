@@ -47,6 +47,10 @@ let pokemonRepository = (function () {
   };
 })();
 
+pokemonList.forEach(function (name) {
+  document.write(name);
+});
+
 //This lists the Pokemon in the DOM and marks them if they are size 1 or larger
 /* document.write('<ul>');
 function printArrayDetails(list) {
