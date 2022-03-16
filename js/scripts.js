@@ -32,6 +32,13 @@ let pokemonList = [
   },
 ];
 
+pokemonList.forEach(function (pokemon) {
+  let result = pokemon.height >= 1 ? " - Wow, that's big!" : '';
+  document.write(
+    '<p>' + pokemon.name + ' (height: ' + pokemon.height + ')' + result + '</p>'
+  );
+});
+
 //This lists the Pokemon in the DOM and marks them if they are size 1 or larger
 /* document.write('<ul>');
 function printArrayDetails(list) {
