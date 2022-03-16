@@ -1,4 +1,4 @@
-// This array contains the Pokemon data for the app
+// These arrays contain the Pokemon data for the app
 let pokemonList = [
   {
     name: 'Wartortle',
