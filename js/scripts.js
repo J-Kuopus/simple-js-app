@@ -36,25 +36,27 @@ let pokemonList2 = [
 ];
 
 //This lists the Pokemon in the DOM and marks them if they are size 1 or larger
+document.write('<ul>');
 function printArrayDetails(list) {
   for (let i = 0; i < list.length; i++) {
     if (list[i].height >= 1) {
       document.write(
-        '<p>' +
+        '<li>' +
           list[i].name +
           ' (height: ' +
           list[i].height +
           ')' +
           " - Wow, that's big!" +
-          '</p>'
+          '</li>'
       );
     } else {
       document.write(
-        '<p>' + list[i].name + ' (height: ' + list[i].height + ')' + '</p>'
+        '<li>' + list[i].name + ' (height: ' + list[i].height + ')' + '</li>'
       );
     }
   }
 }
+document.write('</ul>');
 
 printArrayDetails(pokemonList);
 printArrayDetails(pokemonList2);
