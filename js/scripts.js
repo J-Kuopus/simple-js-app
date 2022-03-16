@@ -1,4 +1,4 @@
-// These arrays contain the Pokemon data for the app
+// IIFE for pokemonList array
 let pokemonRepository = (function () {
   let pokemonList = [
     {
