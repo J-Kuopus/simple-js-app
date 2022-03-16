@@ -1,21 +1,36 @@
 // These arrays contain the Pokemon data for the app
-let pokemonList = [
-  {
-    name: 'Wartortle',
-    height: 1.0,
-    types: ['monster', 'water-1'],
-  },
-  {
-    name: 'Charmander',
-    height: 0.6,
-    types: ['monster', 'dragon'],
-  },
-  {
-    name: 'Pikachu',
-    height: 0.4,
-    types: ['field', 'fairy'],
-  },
-];
+let pokemonRepository = (function () {
+  let pokemonList = [
+    {
+      name: 'Wartortle',
+      height: 1.0,
+      types: ['monster', 'water-1'],
+    },
+    {
+      name: 'Charmander',
+      height: 0.6,
+      types: ['monster', 'dragon'],
+    },
+    {
+      name: 'Pikachu',
+      height: 0.4,
+      types: ['field', 'fairy'],
+    },
+  ];
+
+  function getAll() {
+    return pokemonList;
+  }
+
+  function add(pokemon) {
+    pokemonList.push(pokemon);
+  }
+
+  return {
+    getAll: getAll,
+    add: add,
+  };
+})();
 
 let pokemonList2 = [
   {
