@@ -53,29 +53,3 @@ pokemonRepository.getAll().forEach(function (pokemon) {
     '<p>' + pokemon.name + ' (height: ' + pokemon.height + ')' + result + '</p>'
   );
 });
-
-//This lists the Pokemon in the DOM and marks them if they are size 1 or larger
-/* document.write('<ul>');
-function printArrayDetails(list) {
-  for (let i = 0; i < list.length; i++) {
-    if (list[i].height >= 1) {
-      document.write(
-        '<li>' +
-          list[i].name +
-          ' (height: ' +
-          list[i].height +
-          ')' +
-          " - Wow, that's big!" +
-          '</li>'
-      );
-    } else {
-      document.write(
-        '<li>' + list[i].name + ' (height: ' + list[i].height + ')' + '</li>'
-      );
-    }
-  }
-}
-document.write('</ul>');
-
-printArrayDetails(pokemonList);
-printArrayDetails(pokemonList2); */
