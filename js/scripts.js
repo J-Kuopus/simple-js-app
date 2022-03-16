@@ -48,7 +48,7 @@ let pokemonRepository = (function () {
 })();
 
 //This lists the Pokemon in the DOM and marks them if they are size 1 or larger
-document.write('<ul>');
+/* document.write('<ul>');
 function printArrayDetails(list) {
   for (let i = 0; i < list.length; i++) {
     if (list[i].height >= 1) {
@@ -71,4 +71,4 @@ function printArrayDetails(list) {
 document.write('</ul>');
 
 printArrayDetails(pokemonList);
-printArrayDetails(pokemonList2);
+printArrayDetails(pokemonList2); */
