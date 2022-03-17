@@ -54,7 +54,7 @@ pokemonRepository.getAll().forEach(function (pokemon) {
   let listItem = document.createElement('li');
   let button = document.createElement('button');
   document.write(button.innerText);
-  button.innerText = 'pokemon.name';
+  button.innerText = pokemon.name;
   button.classList.add('pokemon-button');
   listItem.appendChild(button);
   pokemonLoopList.appendChild(listItem);
