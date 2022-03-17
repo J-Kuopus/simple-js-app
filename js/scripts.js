@@ -51,15 +51,7 @@ let pokemonRepository = (function () {
 document.write('<ul>');
 pokemonRepository.getAll().forEach(function (pokemon) {
   let result = pokemon.height >= 1 ? " - Wow, that's big!" : '';
-  document.write(
-    '<li>' +
-      pokemon.name +
-      ' (height: ' +
-      pokemon.height +
-      ')' +
-      result +
-      '</li>'
-  );
+
   let pokemonLoopList = document.querySelector('.pokemon-list');
 });
 document.write('</ul>');
