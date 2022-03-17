@@ -38,3 +38,8 @@ header {
     padding: 20px;
   }
 }
+
+.pokemon-button {
+  background-color: #28aafd;
+  color: #fff;
+}
