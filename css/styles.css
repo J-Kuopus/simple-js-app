@@ -52,3 +52,7 @@ header {
   transition-duration: 0.4s;
   cursor: pointer;
 }
+
+ul {
+  list-style-type: none;
+}
