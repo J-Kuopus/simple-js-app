@@ -52,4 +52,7 @@ let pokemonRepository = (function () {
 pokemonRepository.getAll().forEach(function (pokemon) {
   let pokemonLoopList = document.querySelector('.pokemon-list');
   let listItem = document.createElement('li');
+  let button = document.createElement('button');
+  document.write(button.innerText);
+  button.innerText = 'pokemon.name';
 });
