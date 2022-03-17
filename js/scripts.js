@@ -60,5 +60,6 @@ pokemonRepository.getAll().forEach(function (pokemon) {
       result +
       '</li>'
   );
+  let pokemonLoopList = document.querySelector('.pokemon-list');
 });
 document.write('</ul>');
