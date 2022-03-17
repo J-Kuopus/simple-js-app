@@ -48,10 +48,9 @@ let pokemonRepository = (function () {
 })();
 
 // Loop that lists all the Pokemon and marks them if they are size 1 or bigger
-document.write('<ul>');
+
 pokemonRepository.getAll().forEach(function (pokemon) {
   let result = pokemon.height >= 1 ? " - Wow, that's big!" : '';
 
   let pokemonLoopList = document.querySelector('.pokemon-list');
 });
-document.write('</ul>');
