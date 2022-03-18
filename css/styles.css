@@ -23,6 +23,16 @@ main {
   align-items: center;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #007cbe;
+}
+
+h1 {
+  color: #fff;
+}
+
 @media all and (max-width: 600px) {
   body {
     padding: 20px;
