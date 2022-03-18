@@ -68,7 +68,6 @@ let pokemonRepository = (function () {
 })();
 
 // Loop that lists all the Pokemon and marks them if they are size 1 or bigger
-
 pokemonRepository.getAll().forEach(function (pokemon) {
   pokemonRepository.addListItem(pokemon);
 });
