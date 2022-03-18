@@ -17,17 +17,6 @@ body {
   line-height: 1.6;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-
-#pokedex-logo-text {
-  padding: 20px;
-  width: 40%;
-}
-
 main {
   display: flex;
   flex-direction: column;
