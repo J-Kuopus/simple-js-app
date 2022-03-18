@@ -57,8 +57,13 @@ h1 {
   font-size: 16px;
   margin: 4px 2px;
   transition-duration: 0.4s;
-  cursor: pointer;
   border-radius: 15px;
+}
+
+.pokemon-button:hover,
+.pokemon-button:focus {
+  cursor: pointer;
+  background-color: #910000;
 }
 
 ul {
