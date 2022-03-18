@@ -1,8 +1,7 @@
 /* Color used:
 
 background color: #f9ffa6
-pokedex logo color: #28aafd
-pokemon app buttons: #007cbe
+pokemon app buttons: #ee0000
 
 */
 
@@ -26,7 +25,7 @@ main {
 header {
   display: flex;
   justify-content: center;
-  background-color: #007cbe;
+  background-color: #ee0000;
   top: 0;
   position: fixed;
   width: 100%;
@@ -43,7 +42,7 @@ h1 {
 }
 
 .pokemon-button {
-  background-color: #007cbe;
+  background-color: #ee0000;
   color: #fff;
   border: none;
   padding: 16px 32px;
