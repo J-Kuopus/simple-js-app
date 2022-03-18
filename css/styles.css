@@ -60,6 +60,8 @@ h1 {
   margin: 4px 2px;
   transition-duration: 0.2s;
   border-radius: 15px;
+  border-bottom: 2px solid var(--dark-grey);
+  box-shadow: 2px 2px var(--dark-grey);
 }
 
 .pokemon-button:hover,
