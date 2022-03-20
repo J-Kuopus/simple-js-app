@@ -68,3 +68,10 @@ h1 {
 .pokemon-list {
   list-style-type: none;
 }
+
+@media all and (max-width: 600px) {
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
