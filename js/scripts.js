@@ -72,7 +72,7 @@ pokemonRepository.getAll().forEach(function (pokemon) {
   pokemonRepository.addListItem(pokemon);
 });
 
-const searchInput = document.querySelector('.search-bar');
+const searchInput = document.querySelector('#search-bar');
 
 searchInput.addEventListener('input', (pokemon) => {
   let value = pokemon.target.value;
