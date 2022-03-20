@@ -71,3 +71,14 @@ let pokemonRepository = (function () {
 pokemonRepository.getAll().forEach(function (pokemon) {
   pokemonRepository.addListItem(pokemon);
 });
+
+const searchInput = document.querySelector('.search-bar');
+
+searchInput.addEventListener('input', (pokemon) => {
+  let value = pokemon.target.value;
+  if (value && value.trim().length > 0) {
+    value = value.trim().toLowerCase();
+  } else {
+    return 'Invalid Input!';
+  }
+});
