@@ -44,12 +44,6 @@ h1 {
   color: var(--secondary-color);
 }
 
-@media all and (max-width: 600px) {
-  body {
-    padding: 20px;
-  }
-}
-
 .pokemon-button {
   background-color: var(--primary-color);
   color: var(--secondary-color);
