@@ -71,6 +71,6 @@ h1 {
   background-color: var(--button-hover);
 }
 
-ul {
+.pokemon-list {
   list-style-type: none;
 }
