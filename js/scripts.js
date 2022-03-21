@@ -72,6 +72,7 @@ pokemonRepository.getAll().forEach(function (pokemon) {
   pokemonRepository.addListItem(pokemon);
 });
 
+/* Search Bar code
 const searchInput = document.querySelector('#search-bar');
 
 searchInput.addEventListener('input', (pokemon) => {
@@ -81,4 +82,4 @@ searchInput.addEventListener('input', (pokemon) => {
   } else {
     return 'Invalid Input!';
   }
-});
+}); */
