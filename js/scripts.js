@@ -1,6 +1,7 @@
 // IIFE for pokemonList array
 let pokemonRepository = (function () {
   let pokemonList = [];
+  let apiUrl = 'https://pokeapi.com/api/v2/pokemon/?limit=150';
 
   function add(pokemon) {
     pokemonList.push(pokemon);
