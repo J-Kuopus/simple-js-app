@@ -57,8 +57,10 @@ let pokemonRepository = (function () {
 })();
 
 // Loop that lists all the Pokemon
-pokemonRepository.getAll().forEach(function (pokemon) {
-  pokemonRepository.addListItem(pokemon);
+pokemonRepository.loadList().then(function () {
+  pokemonRepository.getAll().forEach(function (pokemon) {
+    pokemonRepository.addListItem(pokemon);
+  });
 });
 
 /* Search Bar code
