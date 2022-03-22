@@ -26,8 +26,7 @@ let pokemonRepository = (function () {
     /* This will log the Pokemon's name in the console when the button is clicked
     button.addEventListener('click', function () {
       showDetails(pokemon);
-    });
-    document.write(button.innerText);*/
+    });*/
     button.innerText = pokemon.name;
     button.classList.add('pokemon-button');
     listItem.appendChild(button);
