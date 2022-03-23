@@ -76,6 +76,11 @@ let pokemonRepository = (function () {
   // This creates a new modal div
   let modal = document.createElement('div');
   modal.classList.add('modal');
+
+   // This creates the close button on the modal
+   let closeButtonElement = document.createElement('button');
+   closeButtonElement.classList.add('modal-close');
+   closeButtonElement.innerText = 'Close';
     };
   }
 
