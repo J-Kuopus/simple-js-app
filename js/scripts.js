@@ -72,6 +72,10 @@ let pokemonRepository = (function () {
   function showModal(title, text) {
   // This clears all existing modal content in HTML
   modalContainer.innerHTML = '';
+
+  // This creates a new modal div
+  let modal = document.createElement('div');
+  modal.classList.add('modal');
     };
   }
 
