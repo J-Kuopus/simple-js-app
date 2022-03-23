@@ -69,10 +69,9 @@ let pokemonRepository = (function () {
       });
   }
 
-  function showDetails(pokemon) {
-    loadDetails(pokemon).then(function () {
-      console.log(pokemon);
-    });
+  function showModal(title, text) {
+    
+    };
   }
 
   return {
