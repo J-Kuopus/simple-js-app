@@ -91,6 +91,12 @@ let pokemonRepository = (function () {
    // This creates a new p element
   let contentElement = document.createElement('p');
   contentElement.innerText = text;
+
+  // These append the new elements, making them legit elements
+  modal.appendChild(closeButtonElement);
+  modal.appendChild(titleElement);
+  modal.appendChild(contentElement);
+  modalContainer.appendChild(modal);
     };
   }
 
