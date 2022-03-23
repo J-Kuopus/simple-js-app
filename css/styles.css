@@ -94,7 +94,7 @@ h1 {
   /* to allow scrolling if the screen is not high enough */
   overflow: auto;
   /* this is used to center the modal */
-  display: block; /* <-This is used to hide the modal unless clicked on */
+  display: none; /* <-This is used to hide the modal unless clicked on */
   text-align: center;
 }
 
