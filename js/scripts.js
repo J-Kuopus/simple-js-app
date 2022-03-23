@@ -1,4 +1,3 @@
-let modalContainer = document.querySelector('#modal-container');
 // IIFE for pokemonList array
 let pokemonRepository = (function () {
   let pokemonList = [];
@@ -69,7 +68,26 @@ let pokemonRepository = (function () {
       });
   }
 
-  function showModal(title, text) {
+  return {
+    add: add,
+    getAll: getAll,
+    addListItem: addListItem,
+    loadList: loadList,
+    loadDetails: loadDetails,
+    showModal: showModal,
+  };
+})();
+
+// Loop that lists all the Pokemon
+pokemonRepository.loadList().then(function () {
+  pokemonRepository.getAll().forEach(function (pokemon) {
+    pokemonRepository.addListItem(pokemon);
+  });
+});
+
+// IIFE for Modal
+let modalContainer = document.querySelector('#modal-container');
+function showModal(title, text) {
   // This clears all existing modal content in HTML
   modalContainer.innerHTML = '';
 
@@ -77,18 +95,18 @@ let pokemonRepository = (function () {
   let modal = document.createElement('div');
   modal.classList.add('modal');
 
-   // This creates the close button on the modal
-   let closeButtonElement = document.createElement('button');
-   closeButtonElement.classList.add('modal-close');
-   closeButtonElement.innerText = 'Close';
-    // This will call the hideModal function on click
+  // This creates the close button on the modal
+  let closeButtonElement = document.createElement('button');
+  closeButtonElement.classList.add('modal-close');
+  closeButtonElement.innerText = 'Close';
+  // This will call the hideModal function on click
   closeButtonElement.addEventListener('click', hideModal);
 
-   // This creates a new h1 element
-   let titleElement = document.createElement('h1');
-   titleElement.innerText = title;
+  // This creates a new h1 element
+  let titleElement = document.createElement('h1');
+  titleElement.innerText = title;
 
-   // This creates a new p element
+  // This creates a new p element
   let contentElement = document.createElement('p');
   contentElement.innerText = text;
 
@@ -100,25 +118,7 @@ let pokemonRepository = (function () {
 
   // This creates a new class list for the modal container
   modalContainer.classList.add('is-visible');
-    };
-  }
-
-  return {
-    add: add,
-    getAll: getAll,
-    addListItem: addListItem,
-    loadList: loadList,
-    loadDetails: loadDetails,
-    showDetails: showDetails,
-  };
-})();
-
-// Loop that lists all the Pokemon
-pokemonRepository.loadList().then(function () {
-  pokemonRepository.getAll().forEach(function (pokemon) {
-    pokemonRepository.addListItem(pokemon);
-  });
-});
+}
 
 /* Search Bar code
 const searchInput = document.querySelector('#search-bar');
