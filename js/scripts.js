@@ -83,6 +83,10 @@ let pokemonRepository = (function () {
    closeButtonElement.innerText = 'Close';
     // This will call the hideModal function on click
   closeButtonElement.addEventListener('click', hideModal);
+
+   // This creates a new h1 element
+   let titleElement = document.createElement('h1');
+   titleElement.innerText = title;
     };
   }
 
