@@ -70,7 +70,8 @@ let pokemonRepository = (function () {
   }
 
   function showModal(title, text) {
-    
+  // This clears all existing modal content in HTML
+  modalContainer.innerHTML = '';
     };
   }
 
