@@ -116,6 +116,11 @@ function showModal(title, text) {
   modalContainer.classList.add('is-visible');
 }
 
+// Hides the modal
+function hideModal() {
+  modalContainer.classList.remove('is-visible');
+}
+
 /* Search Bar code
 const searchInput = document.querySelector('#search-bar');
 
