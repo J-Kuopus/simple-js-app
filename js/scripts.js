@@ -87,6 +87,10 @@ let pokemonRepository = (function () {
    // This creates a new h1 element
    let titleElement = document.createElement('h1');
    titleElement.innerText = title;
+
+   // This creates a new p element
+  let contentElement = document.createElement('p');
+  contentElement.innerText = text;
     };
   }
 
