@@ -1,3 +1,4 @@
+let modalContainer = document.querySelector('#modal-container');
 // IIFE for pokemonList array
 let pokemonRepository = (function () {
   let pokemonList = [];
