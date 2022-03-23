@@ -124,6 +124,20 @@ function hideModal() {
   modalContainer.classList.remove('is-visible');
 }
 
+// This event listener will close the modal when the ESC key is pressed
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+    hideModal();
+  }
+});
+
+// This will close the modal when the user clicks outside the modal
+modalContainer.addEventListener('click', (e) => {
+  let target = e.target;
+  if (target === modalContainer) {
+    hideModal();
+  }
+});
 /* Search Bar code
 const searchInput = document.querySelector('#search-bar');
 
