@@ -90,20 +90,24 @@ let pokemonRepository = (function () {
 
     // This event listener will close the modal when the ESC key is pressed
     window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
-    hideModal();
-    }
-  });
-  // Adds is-visible class to modalContainer
-  modalContainer.classList.add('is-visible');
- 
-   // Removes the is-visible class, hiding the modal
-   function hideModal() {
-    let modalContainer = document.querySelector('#modal-container')
+      if (
+        e.key === 'Escape' &&
+        modalContainer.classList.contains('is-visible')
+      ) {
+        hideModal();
+      }
+    });
+    // Adds is-visible class to modalContainer
+    modalContainer.classList.add('is-visible');
+  }
+
+  // Removes the is-visible class, hiding the modal
+  function hideModal() {
+    let modalContainer = document.querySelector('#modal-container');
     modalContainer.classList.remove('is-visible');
   }
 
-return {
+  return {
     add: add,
     getAll: getAll,
     addListItem: addListItem,
