@@ -88,6 +88,10 @@ let pokemonRepository = (function () {
   function showModal(name, height, type, imageUrl) {
     let modalContainer = document.querySelector('#modal-container');
     modalContainer.classList.add('is-visible');
+
+    document.querySelector('.pokemon-button').addEventListener('click', () => {
+      showModal();
+    });
     /*let modal = document.createElement('div');
     modal.classList.add('modal');
     modalContainer.appendChild(modal);
