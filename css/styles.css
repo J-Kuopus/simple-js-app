@@ -132,3 +132,7 @@ h1 {
 .modal p {
   margin-bottom: 0;
 }
+
+.modal-image {
+  width: 200px;
+}
