@@ -88,12 +88,20 @@ let pokemonRepository = (function () {
     let closeButton = document.querySelector('.modal-close');
     closeButton.addEventListener('click', hideModal);
 
-   // This event listener will close the modal when the ESC key is pressed
+    // This event listener will close the modal when the ESC key is pressed
     window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
     hideModal();
-  }
-});
+    }
+  });
+  // Adds is-visible class to modalContainer
+  modalContainer.classList.add('is-visible');
+ 
+
+
+
+
+
 
 
   return {
