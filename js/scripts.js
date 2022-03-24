@@ -97,6 +97,15 @@ let pokemonRepository = (function () {
         hideModal();
       }
     });
+
+    //This will close modal when user clicks outside of it
+    modalContainer.addEventListener('click', (e) => {
+      let target = e.target;
+      if (target === modalContainer) {
+        hideModal();
+      }
+    });
+
     // Adds is-visible class to modalContainer
     modalContainer.classList.add('is-visible');
   }
