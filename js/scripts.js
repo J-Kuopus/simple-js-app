@@ -86,9 +86,18 @@ let pokemonRepository = (function () {
   }
 
   function showModal(title, text) {
+    // This creates modal div
     let modal = document.createElement('div');
     modal.classList.add('modal');
     modalContainer.appendChild(modal);
+
+    // This creates a new h1 element
+    let titleElement = document.createElement('h1');
+    titleElement.innerText = title;
+
+    // This creates a new p element
+    let contentElement = document.createElement('p');
+    contentElement.innerText = text;
 
     /*let closeButtonElement = document.createElement('button');
     closeButtonElement.classList.add('modal-close');
