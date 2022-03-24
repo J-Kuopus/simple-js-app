@@ -113,6 +113,7 @@ h1 {
   width: 100%;
   max-width: 700px;
   align-items: center;
+  border-radius: 20px;
 }
 
 .modal-close {
