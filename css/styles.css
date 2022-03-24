@@ -100,7 +100,7 @@ h1 {
 
 #modal-container.is-visible {
   /* This is the class that was added with JS */
-  display: block;
+  display: grid;
 }
 
 .modal {
