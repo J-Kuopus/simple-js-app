@@ -128,7 +128,6 @@ let pokemonRepository = (function () {
     addListItem: addListItem,
     loadList: loadList,
     loadDetails: loadDetails,
-    showModal: showModal,
     showDetails: showDetails,
     showModal: showModal,
     hideModal: hideModal,
