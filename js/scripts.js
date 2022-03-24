@@ -92,7 +92,12 @@ pokemonRepository.loadList().then(function () {
 });
 
 let modalContainer = document.querySelector('#modal-container');
-function showModal(name, height, image) {}
+function showModal(name, height, image) {
+  // This creates a new modal div
+  let modal = document.createElement('div');
+  modal.classList.add('modal');
+  modalContainer.appendChild(modal);
+}
 /* IIFE for Modal
 let modalContainer = document.querySelector('#modal-container');
 function showModal(title, text) {
