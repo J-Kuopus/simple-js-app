@@ -94,10 +94,12 @@ let pokemonRepository = (function () {
     // This creates a new h1 element
     let titleElement = document.createElement('h1');
     titleElement.innerText = title;
+    modal.appendChild(titleElement);
 
     // This creates a new p element
     let contentElement = document.createElement('p');
     contentElement.innerText = text;
+    modal.appendChild(contentElement);
 
     /*let closeButtonElement = document.createElement('button');
     closeButtonElement.classList.add('modal-close');
