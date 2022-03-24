@@ -75,8 +75,10 @@ let pokemonRepository = (function () {
       console.log(
         'pokemon chosen: ' +
           pokemon.name +
-          'is' +
+          ',' +
+          ' has height of:' +
           pokemon.height +
+          ' ' +
           'and has the abilities of' +
           pokemon.types
       );
@@ -97,11 +99,11 @@ let pokemonRepository = (function () {
     modalImage.classList.add('modal-image');
     modalImage.appendChild(modal);
 
-    let details = 'Height: ' + height + '<br>' + 'Type: ' + type;
+    /*let details = 'Height: ' + height + '<br>' + 'Type: ' + type;
 
     document.querySelector('.modal-text').innerHTML = details;
     document.querySelector('.modal-image').setAttribute('src', imageUrl);
-    console.log(imageUrl);
+    console.log(imageUrl);*/
   }
 
   // Hides the modal
