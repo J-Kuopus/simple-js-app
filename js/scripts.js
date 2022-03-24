@@ -88,11 +88,14 @@ let pokemonRepository = (function () {
     let modal = document.createElement('div');
     modal.classList.add('modal');
     modalContainer.appendChild(modal);
+    //This creates h1 element
     let modalText = document.createElement('h1');
     modalText.classList.add('modal-text');
-
+    modalText.appendChild(modal);
+    // This creates img element
     let modalImage = document.createElement('img');
     modalImage.classList.add('modal-image');
+    modalImage.appendChild(modal);
 
     document.querySelector('.modal-text').innerText = name;
     let details = 'Height: ' + height + '<br>' + 'Type: ' + type;
