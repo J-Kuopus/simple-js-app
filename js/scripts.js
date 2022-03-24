@@ -2,6 +2,7 @@
 let pokemonRepository = (function () {
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+  let modalContainer = document.querySelector('#modal-container');
 
   function add(pokemon) {
     if (
@@ -84,7 +85,7 @@ pokemonRepository.loadList().then(function () {
   });
 });
 
-// IIFE for Modal
+/* IIFE for Modal
 let modalContainer = document.querySelector('#modal-container');
 function showModal(title, text) {
   // This clears all existing modal content in HTML
@@ -137,7 +138,7 @@ modalContainer.addEventListener('click', (e) => {
   if (target === modalContainer) {
     hideModal();
   }
-});
+}); */
 /* Search Bar code
 const searchInput = document.querySelector('#search-bar');
 
