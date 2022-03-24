@@ -93,6 +93,19 @@ let pokemonRepository = (function () {
     console.log(imageUrl);
   }
 
+  let closeButtonElement = document.createElement('button');
+  closeButtonElement.classList.add('modal-close');
+  closeButtonElement.innerText = 'Close';
+  // This will call the hideModal function on click
+  closeButtonElement.addEventListener('click', hideModal);
+
+  // This will close the modal when the ESC key is pressed
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+      hideModal();
+    }
+  });
+
   return {
     add: add,
     getAll: getAll,
