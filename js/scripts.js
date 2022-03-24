@@ -118,6 +118,9 @@ let pokemonRepository = (function () {
     loadList: loadList,
     loadDetails: loadDetails,
     showModal: showModal,
+    showDetails: showDetails,
+    showModal: showModal,
+    hideModal: hideModal,
   };
 })();
 
