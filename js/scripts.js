@@ -88,7 +88,7 @@ let pokemonRepository = (function () {
     document.querySelector('.modal__text').innerText = name;
     let details = 'Height: ' + height + '<br>' + 'Type: ' + type;
 
-    document.querySelector('.modal__text').innerHTML = details:
+    document.querySelector('.modal__text').innerHTML = details;
     document.querySelector('.modal__img').setAttribute('src', imageUrl);
     console.log(imageUrl);
   }
