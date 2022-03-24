@@ -98,60 +98,7 @@ function showModal(name, height, image) {
   modal.classList.add('modal');
   modalContainer.appendChild(modal);
 }
-/* IIFE for Modal
-let modalContainer = document.querySelector('#modal-container');
-function showModal(title, text) {
-  // This clears all existing modal content in HTML
-  modalContainer.innerHTML = '';
 
-  // This creates a new modal div
-  let modal = document.createElement('div');
-  modal.classList.add('modal');
-
-  // This creates the close button on the modal
-  let closeButtonElement = document.createElement('button');
-  closeButtonElement.classList.add('modal-close');
-  closeButtonElement.innerText = 'Close';
-  // This will call the hideModal function on click
-  closeButtonElement.addEventListener('click', hideModal);
-
-  // This creates a new h1 element
-  let titleElement = document.createElement('h1');
-  titleElement.innerText = title;
-
-  // This creates a new p element
-  let contentElement = document.createElement('p');
-  contentElement.innerText = text;
-
-  // These append the new elements, making them legit elements
-  modal.appendChild(closeButtonElement);
-  modal.appendChild(titleElement);
-  modal.appendChild(contentElement);
-  modalContainer.appendChild(modal);
-
-  // This creates a new class list for the modal container
-  modalContainer.classList.add('is-visible');
-}
-
-// Hides the modal
-function hideModal() {
-  modalContainer.classList.remove('is-visible');
-}
-
-// This event listener will close the modal when the ESC key is pressed
-window.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
-    hideModal();
-  }
-});
-
-// This will close the modal when the user clicks outside the modal
-modalContainer.addEventListener('click', (e) => {
-  let target = e.target;
-  if (target === modalContainer) {
-    hideModal();
-  }
-}); */
 /* Search Bar code
 const searchInput = document.querySelector('#search-bar');
 
