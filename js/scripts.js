@@ -85,6 +85,8 @@ let pokemonRepository = (function () {
 
   function showModal(name, height, type, imageUrl) {
     let modalContainer = document.querySelector('#modal-container');
+    let modal = document.createElement('div');
+    modal.classList.add('modal');
     let modalText = document.createElement('modal-text');
     let modalImage = document.createElement('modal-image');)
 
