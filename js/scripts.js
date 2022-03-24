@@ -97,6 +97,12 @@ let pokemonRepository = (function () {
   // Adds is-visible class to modalContainer
   modalContainer.classList.add('is-visible');
  
+   // Removes the is-visible class, hiding the modal
+   function hideModal() {
+    let modalContainer = document.querySelector('#modal-container')
+    modalContainer.classList.remove('is-visible');
+  }
+
 
 
 
