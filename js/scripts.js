@@ -92,6 +92,13 @@ let pokemonRepository = (function () {
     modal.classList.add('modal');
     modalContainer.appendChild(modal);
 
+    let closeButtonElement = document.createElement('button');
+    closeButtonElement.classList.add('modal-close');
+    closeButtonElement.innerText = 'Close';
+    // This will call the hideModal function on click
+    closeButtonElement.addEventListener('click', hideModal);
+    modal.appendChild(closeButtonElement);
+
     document.querySelector('.pokemon-button').addEventListener('click', () => {
       showModal();
     });
@@ -119,11 +126,11 @@ let pokemonRepository = (function () {
     modalContainer.classList.remove('is-visible');
   }
 
-  let closeButtonElement = document.createElement('button');
+  /*let closeButtonElement = document.createElement('button');
   closeButtonElement.classList.add('modal-close');
   closeButtonElement.innerText = 'Close';
   // This will call the hideModal function on click
-  closeButtonElement.addEventListener('click', hideModal);
+  closeButtonElement.addEventListener('click', hideModal);*/
 
   // This will close the modal when the ESC key is pressed
   window.addEventListener('keydown', (e) => {
