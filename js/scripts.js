@@ -97,7 +97,6 @@ let pokemonRepository = (function () {
     modalImage.classList.add('modal-image');
     modalImage.appendChild(modal);
 
-    document.querySelector('.modal-text').innerText = name;
     let details = 'Height: ' + height + '<br>' + 'Type: ' + type;
 
     document.querySelector('.modal-text').innerHTML = details;
