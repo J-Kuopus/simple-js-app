@@ -104,12 +104,16 @@ let pokemonRepository = (function () {
     // This creates a new class list for the modal container
     modalContainer.classList.add('is-visible');
 
-    /*let closeButtonElement = document.createElement('button');
+    let closeButtonElement = document.createElement('button');
     closeButtonElement.classList.add('modal-close');
     closeButtonElement.innerText = 'Close';
     // This will call the hideModal function on click
     closeButtonElement.addEventListener('click', hideModal);
     modal.appendChild(closeButtonElement);
+
+    document.querySelector('.pokemon-button').addEventListener('click', () => {
+      showModal('Modal-title', 'This is the modal content!');
+    });
 
     /*document.querySelector('.pokemon-button').addEventListener('click', () => {
       showModal();
