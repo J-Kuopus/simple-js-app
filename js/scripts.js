@@ -81,11 +81,11 @@ let pokemonRepository = (function () {
     document.querySelector('.modal-text').innerHTML = details;
     document.querySelector('.modal-image').setAttribute('src', imageUrl);
 
-    // This will close the modal with a click on close button
+    // This will close the modal with a click on Close button
     let closeButton = document.querySelector('.modal-close');
     closeButton.addEventListener('click', hideModal);
 
-    // This event listener will close the modal when the ESC key is pressed
+    // This will close the modal when the ESC key is pressed
     window.addEventListener('keydown', (e) => {
       if (
         e.key === 'Escape' &&
