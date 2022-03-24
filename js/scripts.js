@@ -2,6 +2,7 @@
 let pokemonRepository = (function () {
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+  let modalContainer = document.querySelector('#modal-container');
 
   function add(pokemon) {
     if (
@@ -70,6 +71,7 @@ let pokemonRepository = (function () {
 
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
+      showModal(pokemon.name, pokemon.height, pokemon.types, pokemon.imageUrl);
       console.log(pokemon);
     });
   }
