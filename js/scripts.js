@@ -82,7 +82,6 @@ let pokemonRepository = (function () {
 
     document.querySelector('.modal-text').innerHTML = details;
     document.querySelector('.modal-image').setAttribute('src', imageUrl);
-    console.log(imageUrl);
     // This will close the modal with a click on close button
     let closeButton = document.querySelector('.modal-close');
     closeButton.addEventListener('click', hideModal);
