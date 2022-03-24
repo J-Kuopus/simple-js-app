@@ -101,6 +101,9 @@ let pokemonRepository = (function () {
     contentElement.innerText = text;
     modal.appendChild(contentElement);
 
+    // This creates a new class list for the modal container
+    modalContainer.classList.add('is-visible');
+
     /*let closeButtonElement = document.createElement('button');
     closeButtonElement.classList.add('modal-close');
     closeButtonElement.innerText = 'Close';
