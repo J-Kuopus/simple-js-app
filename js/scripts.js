@@ -90,6 +90,9 @@ pokemonRepository.loadList().then(function () {
     pokemonRepository.addListItem(pokemon);
   });
 });
+
+let modalContainer = document.querySelector('#modal-container');
+function showModal(name, height, image) {}
 /* IIFE for Modal
 let modalContainer = document.querySelector('#modal-container');
 function showModal(title, text) {
