@@ -93,6 +93,11 @@ let pokemonRepository = (function () {
     console.log(imageUrl);
   }
 
+  // Hides the modal
+  function hideModal() {
+    modalContainer.classList.remove('is-visible');
+  }
+
   let closeButtonElement = document.createElement('button');
   closeButtonElement.classList.add('modal-close');
   closeButtonElement.innerText = 'Close';
