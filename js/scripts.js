@@ -87,7 +87,8 @@ let pokemonRepository = (function () {
 
   function showModal(name, height, type, imageUrl) {
     let modalContainer = document.querySelector('#modal-container');
-    let modal = document.createElement('div');
+    modalContainer.classList.add('is-visible');
+    /*let modal = document.createElement('div');
     modal.classList.add('modal');
     modalContainer.appendChild(modal);
     //This creates h1 element
@@ -97,7 +98,7 @@ let pokemonRepository = (function () {
     // This creates img element
     let modalImage = document.createElement('img');
     modalImage.classList.add('modal-image');
-    modalImage.appendChild(modal);
+    modalImage.appendChild(modal);*/
 
     /*let details = 'Height: ' + height + '<br>' + 'Type: ' + type;
 
