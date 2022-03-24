@@ -70,6 +70,7 @@ let pokemonRepository = (function () {
 
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
+      // This will open the modal
       showModal(pokemon.name, pokemon.height, pokemon.types, pokemon.imageUrl);
     });
   }
@@ -78,9 +79,9 @@ let pokemonRepository = (function () {
     let modalContainer = document.querySelector('#modal-container');
     document.querySelector('.modal-title').innerText = name;
     let details = 'Height: ' + height + '<br>' + 'Type: ' + types;
-
     document.querySelector('.modal-text').innerHTML = details;
     document.querySelector('.modal-image').setAttribute('src', imageUrl);
+
     // This will close the modal with a click on close button
     let closeButton = document.querySelector('.modal-close');
     closeButton.addEventListener('click', hideModal);
@@ -103,11 +104,11 @@ let pokemonRepository = (function () {
       }
     });
 
-    // Adds is-visible class to modalContainer
+    // Adds 'is-visible' class to modalContainer
     modalContainer.classList.add('is-visible');
   }
 
-  // Removes the is-visible class, hiding the modal
+  // Removes the 'is-visible class', hiding the modal
   function hideModal() {
     let modalContainer = document.querySelector('#modal-container');
     modalContainer.classList.remove('is-visible');
