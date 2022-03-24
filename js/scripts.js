@@ -91,14 +91,6 @@ pokemonRepository.loadList().then(function () {
   });
 });
 
-let modalContainer = document.querySelector('#modal-container');
-function showModal(name, height, image) {
-  // This creates a new modal div
-  let modal = document.createElement('div');
-  modal.classList.add('modal');
-  modalContainer.appendChild(modal);
-}
-
 /* Search Bar code
 const searchInput = document.querySelector('#search-bar');
 
