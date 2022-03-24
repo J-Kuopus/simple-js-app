@@ -68,6 +68,21 @@ let pokemonRepository = (function () {
       });
   }
 
+  function showDetails(pokemon) {
+    loadDetails(pokemon).then(function () {
+      //This adds the showModal
+      showModal(pokemon.name, pokemon.height, pokemon.types, pokemon.imageUrl);
+      console.log(
+        'pokemon chosen: ' +
+          pokemon.name +
+          'is' +
+          pokemon.height +
+          'and has the abilities of' +
+          pokemon.types
+      );
+    });
+  }
+
   return {
     add: add,
     getAll: getAll,
