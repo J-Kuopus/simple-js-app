@@ -70,14 +70,14 @@ let pokemonRepository = (function () {
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
       // This will open the modal
-      showModal(pokemon.name, pokemon.height, pokemon.types, pokemon.imageUrl);
+      showModal(pokemon.name, pokemon.height, pokemon.imageUrl);
     });
   }
 
-  function showModal(name, height, types, imageUrl) {
+  function showModal(name, height, imageUrl) {
     let modalContainer = document.querySelector('#modal-container');
     document.querySelector('.modal-title').innerText = name;
-    let details = 'Height: ' + height + '<br>' + 'Type: ' + types;
+    let details = 'Height: ' + height;
     document.querySelector('.modal-text').innerHTML = details;
     document.querySelector('.modal-image').setAttribute('src', imageUrl);
 
