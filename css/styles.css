@@ -189,8 +189,4 @@ ul {
   ul {
     grid-template-columns: auto;
   }
-
-  main {
-    padding-top: 400px;
-  }
 }
