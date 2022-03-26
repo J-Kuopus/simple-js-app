@@ -44,6 +44,11 @@ h1 {
   color: var(--secondary-color);
 }
 
+ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
 .pokemon-button {
   background-color: var(--primary-color);
   color: var(--secondary-color);
