@@ -45,6 +45,10 @@ header {
   width: 300px;
 }
 
+.image-wrapper {
+  padding: 10px;
+}
+
 h1 {
   color: var(--secondary-color);
 }
