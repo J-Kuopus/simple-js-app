@@ -34,7 +34,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: var(--secondary-color);
   top: 0;
   position: fixed;
@@ -47,6 +47,10 @@ header {
 
 .image-wrapper2 {
   padding: 10px;
+}
+
+#pokedex-pic {
+  width: 100px;
 }
 
 .form-container {
