@@ -61,8 +61,7 @@ h1 {
 ul {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  column-gap: 5px;
-  row-gap: 5px;
+  gap: 50px 75px;
 }
 
 .pokemon-button {
