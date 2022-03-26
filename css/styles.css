@@ -147,6 +147,12 @@ ul {
   text-decoration: underline;
 }
 
+.modal-close:hover,
+.modal-close:focus {
+  cursor: pointer;
+  color: var(--dark-grey);
+}
+
 .modal h1 {
   margin-top: 0;
   color: #2b2b2b;
