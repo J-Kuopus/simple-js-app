@@ -40,6 +40,10 @@ header {
   width: 100%;
 }
 
+#pokedex-logo {
+  width: 300px;
+}
+
 h1 {
   color: var(--secondary-color);
 }
