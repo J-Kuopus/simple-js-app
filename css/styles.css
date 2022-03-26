@@ -89,17 +89,6 @@ ul {
   list-style-type: none;
 }
 
-@media all and (max-width: 600px) {
-  main {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  h2,
-  p {
-    text-align: center;
-  }
-}
-
 #modal-container {
   position: fixed;
   padding: 20px;
@@ -185,11 +174,18 @@ ul {
 
   main {
     padding-top: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .form-container {
     padding-top: 10px;
     padding-bottom: 15px;
+  }
+
+  h2,
+  p {
+    text-align: center;
   }
 }
 
