@@ -33,6 +33,7 @@ main {
 header {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   background-color: var(--secondary-color);
   top: 0;
   position: fixed;
