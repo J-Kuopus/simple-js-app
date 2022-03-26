@@ -164,3 +164,9 @@ ul {
 .modal-image {
   width: 200px;
 }
+
+@media all and (max-width: 750px) {
+  ul {
+    grid-template-columns: auto auto auto;
+  }
+}
