@@ -174,3 +174,9 @@ ul {
     flex-wrap: wrap;
   }
 }
+
+@media all and (max-width: 675px) {
+  main {
+    padding-top: 200px;
+  }
+}
