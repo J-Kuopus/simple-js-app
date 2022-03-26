@@ -182,6 +182,10 @@ ul {
   header {
     flex-wrap: wrap;
   }
+
+  main {
+    padding-top: 200px;
+  }
 }
 
 @media all and (max-width: 400px) {
