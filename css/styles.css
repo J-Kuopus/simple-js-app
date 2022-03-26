@@ -181,6 +181,12 @@ ul {
   }
 }
 
+@media all and (max-width: 400px) {
+  ul {
+    grid-template-columns: auto;
+  }
+}
+
 @media all and (max-width: 675px) {
   main {
     padding-top: 200px;
