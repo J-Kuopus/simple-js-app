@@ -186,6 +186,11 @@ ul {
   main {
     padding-top: 200px;
   }
+
+  .form-container {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
 }
 
 @media all and (max-width: 400px) {
