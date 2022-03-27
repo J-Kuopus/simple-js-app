@@ -181,6 +181,7 @@ ul {
   .search-container {
     padding-top: 10px;
     padding-bottom: 15px;
+    padding-left: 0;
   }
 
   h2,
