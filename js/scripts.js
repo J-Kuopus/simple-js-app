@@ -67,6 +67,10 @@ let pokemonRepository = (function () {
       });
   }
 
+  function showLoadingMessage() {
+    return 'Loading...';
+  }
+
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
       // This will open the modal
