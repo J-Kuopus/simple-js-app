@@ -69,11 +69,9 @@ let pokemonRepository = (function () {
       });
   }
 
-  function showLoadingMessage() {
-    return 'Loading...';
-  }
+  /* function showLoadingMessage() {}
 
-  function hideLoadingMessage() {}
+  function hideLoadingMessage() {} */
 
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
