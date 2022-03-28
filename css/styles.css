@@ -12,10 +12,6 @@ Button Hover: #910000
   --dark-grey: #2b2b2b;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Fredoka', sans-serif;
   margin: 0 auto;
