@@ -54,10 +54,6 @@ header {
   padding-left: 50px;
 }
 
-h1 {
-  color: var(--secondary-color);
-}
-
 ul {
   display: grid;
   grid-template-columns: auto auto auto auto;
