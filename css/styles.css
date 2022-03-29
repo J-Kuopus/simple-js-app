@@ -26,14 +26,14 @@ main {
   padding-top: 100px;
 }
 
-header {
+nav {
   /* display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly; */
   background-color: var(--secondary-color);
-  top: 0;
-  position: fixed;
+  /* top: 0;
+  position: fixed; */
   width: 100%;
 }
 
