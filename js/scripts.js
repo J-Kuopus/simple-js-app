@@ -24,7 +24,7 @@ let pokemonRepository = (function () {
     let listItem = document.createElement('li');
     listItem.classList.add('group-list-item');
     let button = document.createElement('button');
-    button.classList.add('btn', 'btn-primary');
+    button.classList.add('btn-primary');
     button.setAttribute('data-toggle', 'modal');
     button.setAttribute('data-target', '#pokemonModal');
     button.addEventListener('click', function () {
