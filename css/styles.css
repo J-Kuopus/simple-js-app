@@ -27,10 +27,10 @@ main {
 }
 
 header {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
   background-color: var(--secondary-color);
   top: 0;
   position: fixed;
@@ -45,10 +45,10 @@ header {
   padding: 10px;
 }
 
-.search-container {
+/* .search-container {
   padding-top: 40px;
   padding-left: 50px;
-}
+} */
 
 h1 {
   font-size: 26px;
