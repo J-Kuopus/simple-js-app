@@ -84,6 +84,15 @@ let pokemonRepository = (function () {
   }
 
   function showModal(pokemon) {
+    let modalTitle = $('.modal-title');
+    let modalBody = $('.modal-body');
+    let pokemonName = $('<h2>' + pokemon.name + '</h2>');
+    let pokemonHeight = $('<p>' + 'Height: ' + pokemon.height + '</p>');
+    let pokemonImage = $("<img class='pokemon-modal-image'>");
+    pokemonImage.attr('src', item.imageUrl);
+    modalTitle.append(pokemonName);
+    modalBody.append(pokemonHeight);
+    modalBody.append(pokemonImage);
     /* let modalContainer = document.querySelector('#modal-container');
     document.querySelector('.modal-title').innerText = name;
     let details = 'Height: ' + height;
