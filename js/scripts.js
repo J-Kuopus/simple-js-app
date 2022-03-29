@@ -83,7 +83,7 @@ let pokemonRepository = (function () {
     });
   }
 
-  function showModal() {
+  function showModal(name, height, imageUrl) {
     /* let modalContainer = document.querySelector('#modal-container');
     document.querySelector('.modal-title').innerText = name;
     let details = 'Height: ' + height;
