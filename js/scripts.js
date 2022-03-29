@@ -88,42 +88,6 @@ let pokemonRepository = (function () {
     document.querySelector('.modal-image').setAttribute('src', imageUrl);
     let details = 'Height: ' + height;
     document.querySelector('.modal-text').innerHTML = details;
-    /* let modalContainer = document.querySelector('#modal-container');
-    document.querySelector('.modal-title').innerText = name;
-    let details = 'Height: ' + height;
-    document.querySelector('.modal-text').innerHTML = details;
-    document.querySelector('.modal-image').setAttribute('src', imageUrl);
-
-    // This will close the modal with a click on Close button
-    let closeButton = document.querySelector('.modal-close');
-    closeButton.addEventListener('click', hideModal);
-
-    // This will close the modal when the ESC key is pressed
-    window.addEventListener('keydown', (e) => {
-      if (
-        e.key === 'Escape' &&
-        modalContainer.classList.contains('is-visible')
-      ) {
-        hideModal();
-      }
-    });
-
-    //This will close modal when user clicks outside of it
-    modalContainer.addEventListener('click', (e) => {
-      let target = e.target;
-      if (target === modalContainer) {
-        hideModal();
-      }
-    });
-
-    // Adds 'is-visible' class to modalContainer
-    modalContainer.classList.add('is-visible');
-  }
-
-  // Removes the 'is-visible class', hiding the modal
-  function hideModal() {
-    let modalContainer = document.querySelector('#modal-container');
-    modalContainer.classList.remove('is-visible'); */
   }
 
   return {
