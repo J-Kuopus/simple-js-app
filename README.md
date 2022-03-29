@@ -8,8 +8,11 @@ This app shows a list of pokemon buttons that you can click to find out more inf
 -CSS
 -JavaScript
 
+##Dependencies
+-jQuery (full version 3.3.1)
+-Bootstrap
+
 ##Libraries
--Pokedex, https://pokedex.org/
 -Pokeapi, https://pokeapi.co/api/v2/pokemon/?limit=150
 -polyfill.js
 -fetch.js
