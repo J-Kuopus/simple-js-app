@@ -85,6 +85,7 @@ let pokemonRepository = (function () {
 
   function showModal(name, height, imageUrl) {
     document.querySelector('.modal-title').innerText = name;
+    document.querySelector('.modal-image').setAttribute('src', imageUrl);
     /* let modalContainer = document.querySelector('#modal-container');
     document.querySelector('.modal-title').innerText = name;
     let details = 'Height: ' + height;
