@@ -78,7 +78,9 @@ let pokemonRepository = (function () {
   function hideLoadingMessage() {} */
 
   function showDetails(pokemon) {
-    loadDetails(pokemon);
+    loadDetails(pokemon).then(function () {
+      showModal(item);
+    });
   }
 
   /* function showModal(name, height, imageUrl) {
