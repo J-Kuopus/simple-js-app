@@ -85,6 +85,7 @@ h1 {
   list-style-type: none;
   display: grid;
   grid-template-columns: auto auto auto auto;
+  gap: 50px 75px;
 }
 
 #modal-container {
