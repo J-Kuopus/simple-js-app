@@ -54,11 +54,11 @@ h1 {
   font-size: 26px;
 }
 
-ul {
+/* ul {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 50px 75px;
-}
+} */
 
 .pokemon-button {
   background-color: var(--primary-color);
