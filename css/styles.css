@@ -81,7 +81,7 @@ ul {
   background-color: var(--dark-grey);
 }
 
-.pokemon-list {
+#pokemon-list {
   list-style-type: none;
 }
 
