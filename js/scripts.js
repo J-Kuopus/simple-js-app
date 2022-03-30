@@ -73,10 +73,6 @@ let pokemonRepository = (function () {
       });
   }
 
-  /* function showLoadingMessage() {}
-
-  function hideLoadingMessage() {} */
-
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
       showModal(pokemon.name, pokemon.height, pokemon.imageUrl);
@@ -106,15 +102,3 @@ pokemonRepository.loadList().then(function () {
     pokemonRepository.addListItem(pokemon);
   });
 });
-
-/* Search Bar code
-const searchInput = document.querySelector('#search-bar');
-
-searchInput.addEventListener('input', (pokemon) => {
-  let value = pokemon.target.value;
-  if (value && value.trim().length > 0) {
-    value = value.trim().toLowerCase();
-  } else {
-    return 'Invalid Input!';
-  }
-}); */
