@@ -90,6 +90,7 @@ h1 {
 
 .modal-dialog {
   border: 5px solid var(--primary-color);
+  border-radius: 10px;
 }
 
 /* #modal-container {
