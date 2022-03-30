@@ -105,6 +105,7 @@ h1 {
   font-size: 18px;
 }
 
+/* Media queries to reduce button columns on smaller devices */
 @media all and (max-width: 992px) {
   #pokemon-list {
     grid-template-columns: auto auto auto;
