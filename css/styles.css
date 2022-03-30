@@ -88,6 +88,10 @@ h1 {
   gap: 50px 75px;
 }
 
+.modal-dialog {
+  border: 5px solid var(--primary-color);
+}
+
 /* #modal-container {
   position: fixed;
   padding: 20px;
