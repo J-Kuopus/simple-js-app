@@ -85,7 +85,7 @@ h1 {
 }
 
 .modal-header {
-  background-color: #007cbe;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
