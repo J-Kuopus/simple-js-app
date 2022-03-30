@@ -44,6 +44,7 @@ h1 {
   font-size: 26px;
 }
 
+/* Styling for Pokemon buttons */
 .pokemon-button {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -72,6 +73,7 @@ h1 {
   gap: 50px 75px;
 }
 
+/* Styling for modal */
 .modal-dialog {
   border-radius: 10px;
 }
@@ -89,6 +91,7 @@ h1 {
   color: #fff;
 }
 
+/* Styling for navigation links */
 #nav-links {
   padding-top: 20px;
 }
