@@ -91,6 +91,10 @@ h1 {
   color: #fff;
 }
 
+.modal-image {
+  width: 200px;
+}
+
 /* Styling for navigation links */
 #nav-links {
   padding-top: 20px;
@@ -99,10 +103,6 @@ h1 {
 #nav-links__item {
   color: #0072ee;
   font-size: 18px;
-}
-
-.modal-image {
-  width: 200px;
 }
 
 @media all and (max-width: 992px) {
