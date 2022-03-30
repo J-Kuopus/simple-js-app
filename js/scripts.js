@@ -70,13 +70,13 @@ let pokemonRepository = (function () {
         console.error(e);
       });
   }
-
+  //This adds the pokemon details into the modal
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
       showModal(pokemon.name, pokemon.height, pokemon.imageUrl);
     });
   }
-
+  // This makes modal appear when user clicks Pokemon button
   function showModal(name, height, imageUrl) {
     document.querySelector('.modal-title').innerText = name;
     document.querySelector('.modal-image').setAttribute('src', imageUrl);
