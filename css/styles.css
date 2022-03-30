@@ -93,6 +93,10 @@ h1 {
   border-radius: 10px;
 }
 
+.modal-title {
+  font-size: 30px;
+}
+
 /* #modal-container {
   position: fixed;
   padding: 20px;
