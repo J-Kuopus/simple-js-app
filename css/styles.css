@@ -99,6 +99,10 @@ h1 {
   color: #fff;
 }
 
+#nav-links__item {
+  color: #0072ee;
+}
+
 /* #modal-container {
   position: fixed;
   padding: 20px;
