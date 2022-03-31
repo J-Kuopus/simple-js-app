@@ -52,6 +52,11 @@ nav {
   max-width: 100%;
   height: auto;
 }
+
+#img-wrapper {
+  padding: 10px;
+}
+
 #pokedex-logo-new {
   width: 400px;
   max-width: 100%;
