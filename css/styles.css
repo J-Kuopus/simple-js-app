@@ -48,6 +48,10 @@ nav {
 }
 
 /* Navigation links styling */
+#nav-links {
+  padding-left: 30px;
+}
+
 #nav-links__item {
   color: #0072ee;
   font-size: 18px;
