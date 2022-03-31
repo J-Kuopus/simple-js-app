@@ -158,4 +158,8 @@ nav {
   #pokemon-list {
     grid-template-columns: auto;
   }
+
+  #pokedex-logo-new {
+    width: 325px;
+  }
 }
