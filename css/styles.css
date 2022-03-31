@@ -52,7 +52,9 @@ nav {
   padding-left: 30px;
 }
 
-#nav-links__item {
+#nav-links__item1,
+#nav-links__item2,
+#nav-links__item3 {
   color: #0072ee;
   font-size: 18px;
 }
