@@ -134,6 +134,10 @@ nav {
   p {
     text-align: center;
   }
+
+  #pokedex-logo-new {
+    width: 425px;
+  }
 }
 
 @media all and (max-width: 400px) {
