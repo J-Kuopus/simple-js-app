@@ -28,6 +28,10 @@ main {
   padding-top: 135px;
 }
 
+h1 {
+  font-size: 26px;
+}
+
 nav {
   background-color: var(--secondary-color);
 }
@@ -38,10 +42,6 @@ nav {
 
 #image-wrapper2 {
   padding: 10px;
-}
-
-h1 {
-  font-size: 26px;
 }
 
 /* Styling for Pokemon buttons */
