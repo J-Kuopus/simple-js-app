@@ -45,7 +45,17 @@ nav {
   padding: 10px;
 }
 
-/* Styling for Pokemon buttons */
+/* Navigation links styling */
+#nav-links {
+  padding-top: 20px;
+}
+
+#nav-links__item {
+  color: #0072ee;
+  font-size: 18px;
+}
+
+/* Pokemon button stylings */
 .pokemon-button {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -74,7 +84,7 @@ nav {
   gap: 50px 75px;
 }
 
-/* Styling for modal */
+/* Modal stylings */
 .modal-dialog {
   border-radius: 10px;
 }
@@ -94,16 +104,6 @@ nav {
 
 .modal-image {
   width: 200px;
-}
-
-/* Styling for navigation links */
-#nav-links {
-  padding-top: 20px;
-}
-
-#nav-links__item {
-  color: #0072ee;
-  font-size: 18px;
 }
 
 /* Media queries to reduce button columns on smaller devices */
