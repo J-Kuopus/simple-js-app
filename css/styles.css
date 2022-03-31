@@ -45,6 +45,10 @@ nav {
   padding: 10px;
 }
 
+#pikachu {
+  width: 200px;
+}
+
 /* Navigation links styling */
 #nav-links {
   padding-top: 20px;
