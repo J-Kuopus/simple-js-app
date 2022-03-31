@@ -52,6 +52,11 @@ nav {
   max-width: 100%;
   height: auto;
 }
+#pokedex-logo-new {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
 
 /* Navigation links styling */
 #nav-links__item {
