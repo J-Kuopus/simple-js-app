@@ -138,6 +138,10 @@ nav {
   #pokedex-logo-new {
     width: 425px;
   }
+
+  .pokemon-button {
+    width: 175px;
+  }
 }
 
 @media all and (max-width: 576px) {
