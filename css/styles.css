@@ -37,22 +37,6 @@ nav {
   background-color: var(--secondary-color);
 }
 
-#pokedex-logo {
-  width: 300px;
-  max-width: 100%;
-  height: auto;
-}
-
-#image-wrapper1 {
-  padding: 10px;
-}
-
-#pikachu {
-  width: 150px;
-  max-width: 100%;
-  height: auto;
-}
-
 #img-wrapper {
   padding: 10px;
 }
