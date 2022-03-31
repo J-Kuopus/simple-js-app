@@ -148,9 +148,13 @@ nav {
   #pokedex-logo-new {
     width: 375px;
   }
+
+  #pokemon-list {
+    gap: 40px 65px;
+  }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 485px) {
   #pokemon-list {
     grid-template-columns: auto;
   }
