@@ -36,12 +36,14 @@ let pokemonRepository = (function () {
     button.addEventListener('click', function () {
       showDetails(pokemon);
     });
-    // Add pokemon name to button
+
+    // Adds pokemon name to button
     button.innerText = pokemon.name;
     button.classList.add('pokemon-button');
     listItem.appendChild(button);
     pokemonList.appendChild(listItem);
   }
+
   // Fetches API data then returns JSON data as list
   function loadList() {
     return (
@@ -98,6 +100,7 @@ let pokemonRepository = (function () {
     let details = 'Height: ' + height;
     document.querySelector('.modal-text').innerHTML = details;
   }
+
   // Return keys that allow you to access the IIFE functions
   return {
     add: add,
