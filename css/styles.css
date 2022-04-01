@@ -133,7 +133,7 @@ nav {
   p {
     text-align: center;
   }
-
+  /* Reduces logo img size */
   #pokedex-logo-new {
     width: 425px;
   }
@@ -161,7 +161,7 @@ nav {
   #pokedex-logo-new {
     width: 325px;
   }
-
+  /* Increases button width */
   .pokemon-button {
     width: 250px;
   }
