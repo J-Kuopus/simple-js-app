@@ -102,7 +102,7 @@ let pokemonRepository = (function () {
 
     // Adds pokemon height to body of modal
     let details = 'Height: ' + height;
-    document.querySelector('.modal-text').innerHTML = details;
+    document.querySelector('.modal-text').innerText = details;
   }
 
   // Return keys that allow you to access the IIFE functions
