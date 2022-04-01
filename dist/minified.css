@@ -1,62 +1,41 @@
-/* Color used:
-
-Header and Buttons background: #007cbe
-Header and Button text: #fff
-Button Hover: #2b2b2b
-Link color: #006fe7
-
-*/
-
 :root {
   --primary-color: #007cbe;
   --secondary-color: #fff;
   --dark-grey: #2b2b2b;
 }
-
 body {
   font-family: 'Fredoka', sans-serif;
   margin: 0 auto;
   line-height: 1.6;
   color: var(--dark-grey);
 }
-
 main {
   flex-direction: column;
   padding-top: 155px;
 }
-
 h1 {
   font-size: 26px;
 }
-
-/* Navbar stylings */
 nav {
   background-color: var(--secondary-color);
 }
-
 #img-wrapper {
   padding: 10px;
 }
-
 #pokedex-logo-new {
   width: 500px;
   max-width: 100%;
   height: auto;
 }
-
-/* Navigation links styling */
 #nav-links {
   padding-left: 35px;
 }
-
 #nav-links__item1,
 #nav-links__item2,
 #nav-links__item3 {
   color: #006fe7;
   font-size: 18px;
 }
-
-/* Pokemon button stylings */
 .pokemon-button {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -71,102 +50,80 @@ nav {
   border-bottom: 2px solid var(--dark-grey);
   box-shadow: 2px 2px var(--dark-grey);
 }
-
 .pokemon-button:hover,
 .pokemon-button:focus {
   cursor: pointer;
   background-color: var(--dark-grey);
 }
-
 #pokemon-list {
   list-style-type: none;
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 50px 75px;
 }
-
-/* Modal stylings */
 .modal-dialog {
   border-radius: 10px;
 }
-
 .modal-title {
   font-size: 30px;
 }
-
 .modal-text {
   font-size: 18px;
 }
-
 .modal-header {
   background-color: var(--primary-color);
   color: #fff;
 }
-
 .modal-image {
   width: 200px;
 }
-
-/* Media queries to reduce button columns on smaller devices */
 @media all and (max-width: 992px) {
   #pokemon-list {
     grid-template-columns: auto auto auto;
   }
-
   main {
     padding-top: 150px;
   }
 }
-
 @media all and (max-width: 768px) {
   #pokemon-list {
     grid-template-columns: auto auto;
   }
-
   main {
     padding-top: 150px;
     padding-left: 20px;
     padding-right: 20px;
   }
-
   h1,
   p {
     text-align: center;
   }
-  /* Reduces logo img size */
   #pokedex-logo-new {
     width: 425px;
   }
-
   .pokemon-button {
     width: 175px;
   }
 }
-
 @media all and (max-width: 576px) {
   #pokedex-logo-new {
     width: 375px;
   }
-
   #pokemon-list {
     gap: 40px 65px;
   }
 }
-
 @media all and (max-width: 485px) {
   #pokemon-list {
     grid-template-columns: auto;
   }
-
   #pokedex-logo-new {
     width: 325px;
   }
-  /* Increases button width */
   .pokemon-button {
     width: 250px;
   }
 }
-
 @media all and (max-width: 435px) {
   #pokedex-logo-new {
     width: 275px;

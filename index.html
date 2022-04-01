@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokédex App</title>
+    <title>Pokédex</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="img/favicon-pokedex.png"
+      sizes="16x16"
+    />
+    <!--This is the Bootstrap CSS-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -15,52 +22,80 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka&family=Lato:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="dist/minified.css" />
   </head>
   <body>
-    <!--This is the navigation bar-->
+    <!--Navigation bar-->
     <nav
-      class="navbar-expand-lg fixed-top container-fluid"
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
       aria-label="Navigation bar"
     >
-      <div class="row">
-        <div id="image-wrapper" class="col">
-          <a class="navbar-brand" href="index.html">
-            <img
-              id="pokedex-logo"
-              src="img/pokedex-logo-text3.png"
-              alt="pokedex app logo image"
-            />
-          </a>
+      <div class="container-fluid">
+        <div id="img-wrapper">
+          <img
+            id="pokedex-logo-new"
+            class="img-fluid"
+            src="img/pikachu-logo2.png"
+            alt="Pokedex logo image"
+          />
         </div>
-        <div id="nav-links" class="col-2">
-          <a
-            id="nav-links__item"
-            class="btn btn-link"
-            href="index.html"
-            role="button"
-            >Home</a
-          >
-          <a
-            id="nav-links__item"
-            class="btn btn-link"
-            href="https://pokeapi.co/api/v2/pokemon/"
-            role="button"
-            target="_blank"
-            >API</a
-          >
+        <!--Button for hamburger menu-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#nav-links"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Navigation links-->
+        <div id="nav-links" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a
+                id="nav-links__item1"
+                class="btn btn-link"
+                href="index.html"
+                role="button"
+                >Home<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                id="nav-links__item2"
+                class="btn btn-link"
+                href="https://pokeapi.co/api/v2/pokemon/"
+                role="button"
+                target="_blank"
+                >API</a
+              >
+            </li>
+            <li>
+              <a
+                id="nav-links__item3"
+                class="btn btn-link"
+                href="https://www.pokemon.com/us/"
+                role="button"
+                target="_blank"
+                >Pokemon.com</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
-    <main>
-      <h1>Welcome To The Pokédex App!</h1>
+    <main class="d-flex align-items-center">
+      <h1><strong>Welcome to the Pokédex!</strong></h1>
       <p>
         Here you can learn about Pokémon and their traits. Click on a Pokémon
         button to get started!
       </p>
       <br /><br />
       <ul id="pokemon-list" class="list-group"></ul>
-      <!--This is the modal, which appears when user clicks Pokemon button-->
+      <!--Modal, which appears when user clicks Pokemon button-->
       <div
         class="modal fade"
         id="pokemonModal"
@@ -72,20 +107,13 @@
         <div class="modal-dialog modal-dialog centered" role="document">
           <div class="modal-content">
             <div class="modal-header text-center d-block">
-              <h2 class="modal-title" id="pokemonModalLabel"></h2>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
+              <p class="modal-title" id="pokemonModalLabel"></p>
             </div>
             <div class="modal-body text-center">
               <img class="modal-image" src="img/" alt="picture of pokemon" />
               <p class="modal-text"></p>
             </div>
+            <!--"Close" button at the bottom of the modal-->
             <div class="modal-footer">
               <button
                 type="button"
@@ -101,8 +129,9 @@
     </main>
     <script src="js/promise-polyfill.js"></script>
     <script src="js/fetch.umd.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="dist/minified.js"></script>
     <script src="js/tota11y.min.js"></script>
+    <!--Scripts for Bootstrap. jQuery is the full version-->
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
