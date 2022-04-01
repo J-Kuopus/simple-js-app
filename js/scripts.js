@@ -3,7 +3,7 @@ let pokemonRepository = (function () {
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
-  // Function for adding new pokemon to the list
+  // Adds new pokemon to the list and validates the input
   function add(pokemon) {
     if (
       typeof pokemon === 'object' &&
@@ -69,18 +69,22 @@ let pokemonRepository = (function () {
   // Takes JSON data and organizes it
   function loadDetails(item) {
     let url = item.detailsUrl;
-    return fetch(url)
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (details) {
-        item.imageUrl = details.sprites.front_default;
-        item.height = details.height;
-        item.types = details.types;
-      })
-      .catch(function (e) {
-        console.error(e);
-      });
+    return (
+      fetch(url)
+        .then(function (response) {
+          return response.json();
+        })
+
+        // Adds details to the item
+        .then(function (details) {
+          item.imageUrl = details.sprites.front_default;
+          item.height = details.height;
+          item.types = details.types;
+        })
+        .catch(function (e) {
+          console.error(e);
+        })
+    );
   }
   // Loads the pokemon details into the modal
   function showDetails(pokemon) {
