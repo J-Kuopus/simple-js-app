@@ -167,3 +167,9 @@ nav {
     width: 250px;
   }
 }
+
+@media all and (max-width: 435px) {
+  #pokedex-logo-new {
+    width: 275px;
+  }
+}
