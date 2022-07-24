@@ -1,8 +1,14 @@
 # Pokedex App
 
+![Alt text](img/Pokedex1.jpg?raw=true "Title")
+
 ## Description:
 
-This app shows a list of pokemon buttons that you can click to find out more information about them like: name, appearance and height.
+This is a user interface that shows a list of pokemon buttons that you can click to find out more information about them like: name, appearance and height.
+
+## Link to live website:
+
+https://j-kuopus.github.io/simple-js-app/
 
 ## Technical Requirements:
 
