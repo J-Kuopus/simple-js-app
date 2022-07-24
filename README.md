@@ -1,6 +1,6 @@
 # Pokedex App
 
-![Alt text](img/Pokedex1.jpg?raw=true "Title")
+![Pokedex App Image](img/Pokedex1.jpg?raw=true "Title")
 
 ## Description:
 
