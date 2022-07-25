@@ -13,7 +13,7 @@ Mobile version:
 <br/>
 ![Pokedex App Mobile Image](img/Pokedex1.2.jpg?raw=true "Title")
 
-## Link to live website:
+## Link to live web page:
 
 https://j-kuopus.github.io/simple-js-app/
 
