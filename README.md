@@ -4,6 +4,8 @@
 
 This is a user interface that shows a list of pokemon buttons that you can click to find out more information about them like: name, appearance and height.
 
+## Images 
+
 Web version:
 ![Pokedex App Web Image](img/Pokedex1.jpg?raw=true "Title")
 
